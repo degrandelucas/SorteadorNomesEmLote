@@ -1,6 +1,6 @@
 let listaAmigos = [];
 
-function adicionarAmigo(){
+function adicionar(){
 
 }
 
