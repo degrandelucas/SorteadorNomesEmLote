@@ -4,16 +4,6 @@ body {
   position: relative;
 }
 
-.background__detail {
-  background-color: #00f4bf;
-  height: calc(100% - 389px);
-  left: 0;
-  position: absolute;
-  right: 0;
-  top: 195px;
-  z-index: 0;
-}
-
 .button {
   align-items: center;
   background-color: transparent;
@@ -32,20 +22,6 @@ body {
   padding: 16px 24px;
   text-align: center;
   width: 208px;
-}
-
-.content {
-  background-color: #000;
-  border: 1px solid #1875e8;
-  filter: drop-shadow(0px 0px 30px #1875e8);
-  height: 871px;
-  left: 50%;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 75%;
-  z-index: 1;
 }
 
 .content__corner-rectangle {
