@@ -44,13 +44,6 @@
         justify-items: center;
     }
 
-    .friends__container{
-        width: 100%;
-        align-items: flex-start; 
-        display: flex;
-        padding: 10px;
-    }
-
     .section--results{
         display: grid;
         grid-template-columns: 1fr;
