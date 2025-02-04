@@ -36,12 +36,22 @@
 
     .form__input {
         width: 100%;
+        margin-left: -16px;
     }
 
     .form__buttons{
         display: grid;
         grid-template-columns: 1fr;
         justify-items: center;
+    }
+
+    .friends__title__container {
+        display: grid;
+        justify-items: center;
+    }
+
+    .friends__container{
+        width: 100%;
     }
 
     .section--results{

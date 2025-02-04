@@ -40,7 +40,7 @@ body {
   flex-direction: column;
   gap: 80px;
   justify-content: start;
-  padding: 100px;
+  padding: 60px;
 }
 
 .friends__container {
