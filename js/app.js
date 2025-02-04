@@ -30,6 +30,13 @@ function sortear() {
     }
 }
 
+function embaralha(lista) {
+
+    for (let indice = lista.length; indice; indice--) {
+
+    }
+}
+
 function reiniciar() {
     document.getElementById("lista-amigos").innerHTML = '';
     document.getElementById("lista-sorteio").innerHTML = '';
