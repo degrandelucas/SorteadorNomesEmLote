@@ -21,23 +21,38 @@ function adicionar() {
 }
 
 function sortear() {
-    if (listaAmigos.length < 4) {
-        alert("Adicione mais amigos para sortear!");
-        return;
-    } else {
-        let sorteio = document.getElementById("lista-sorteio");
-        sorteio.innerHTML = '';
+  let sorteio = document.getElementById("lista-sorteio");
+
+  if (listaAmigos.length < 4) {
+    alert("Adicione mais amigos para sortear!");
+    return;
+  } else {
+    embaralha(listaAmigos);
+  }
+  for (let i = 0; i < listaAmigos.length; i++) {
+    if (i < listaAmigos.length - 1) {
+      sorteio.innerHTML +=
+        listaAmigos[i] + " tirou " + listaAmigos[i + 1] + "<br>";
     }
+    else {
+      sorteio.innerHTML += listaAmigos[i] + " tirou " + listaAmigos[0] + "<br>";
+    }
+  }
 }
 
 function embaralha(lista) {
-
-    for (let indice = lista.length; indice; indice--) {
-
-    }
+  for (let indice = lista.length; indice; indice--) {
+    let indiceAleatorio = Math.floor(Math.random() * indice);
+    [lista[indice - 1], lista[indiceAleatorio]] = [
+      lista[indiceAleatorio],
+      lista[indice - 1],
+    ];
+  }
+  return lista;
 }
 
 function reiniciar() {
-    document.getElementById("lista-amigos").innerHTML = '';
-    document.getElementById("lista-sorteio").innerHTML = '';
+  document.getElementById("lista-amigos").innerHTML = "";
+  document.getElementById("lista-sorteio").innerHTML = "";
+  listaAmigos = [];
 }
