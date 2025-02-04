@@ -10,6 +10,7 @@ function adicionar() {
 
   if (listaAmigos.includes(amigo)) {
     alert("Nome do amigo já está na lista!");
+    document.getElementById("nome-amigo").value = "";
     return;
   }
 
@@ -24,7 +25,6 @@ function sortear() {
         alert("Adicione mais amigos para sortear!");
         return;
     } else {
-
         let sorteio = document.getElementById("lista-sorteio");
         sorteio.innerHTML = '';
     }
