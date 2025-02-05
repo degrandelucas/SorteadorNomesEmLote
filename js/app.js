@@ -23,19 +23,16 @@ function adicionar() {
 function sortear() {
   let sorteio = document.getElementById("lista-sorteio");
 
-  if (listaAmigos.length < 4) {
+  if (listaAmigos.length < 2) {
     alert("Adicione mais amigos para sortear!");
     return;
   } else {
     embaralha(listaAmigos);
   }
   for (let i = 0; i < listaAmigos.length; i++) {
-    if (i < listaAmigos.length - 1) {
+    if (i < listaAmigos.length) {
       sorteio.innerHTML +=
-        listaAmigos[i] + " tirou " + listaAmigos[i + 1] + "<br>";
-    }
-    else {
-      sorteio.innerHTML += listaAmigos[i] + " tirou " + listaAmigos[0] + "<br>";
+        listaAmigos[i] + "<br>";
     }
   }
 }
