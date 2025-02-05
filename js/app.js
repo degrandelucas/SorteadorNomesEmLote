@@ -25,15 +25,14 @@
       sorteio.innerHTML = '';
 
       if (listaNomes.length < 2) {
-        alert("Adicione mais amigos para sortear!");
+        alert("Adicione mais nomes para sortear!");
         return;
       } else {
         embaralha(listaNomes);
       }
       for (let i = 0; i < listaNomes.length; i++) {
         if (i < listaNomes.length) {
-          sorteio.innerHTML +=
-            listaNomes[i] + "<br>";
+          sorteio.innerHTML += `${i+1} - ${listaNomes[i]} <br>`;
         }
       }
     }
