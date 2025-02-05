@@ -1,21 +1,21 @@
-# Projeto - Amigo Secreto
+# Projeto - Sorteador de Nomes em Lote
 
-Este projeto é uma aplicação de sorteio de **Amigo Secreto**, desenvolvida em **HTML**, **CSS** e **JavaScript**. O usuário pode adicionar nomes de amigos à lista, sortear os pares e reiniciar o sorteio quando necessário. A aplicação exibe os resultados do sorteio de forma clara e organizada.
+Este projeto é uma aplicação de sorteio de **nomes em lote**, desenvolvida em **HTML**, **CSS** e **JavaScript**. O usuário pode adicionar uma lista de nomes separados por vírgula, realizar o sorteio e reiniciar o processo quando necessário. A aplicação exibe os resultados do sorteio de forma clara e organizada.
 
 ---
 
 ## Funcionalidades Principais
 
-1. **Adicionar Amigos:**
-   - O usuário pode adicionar nomes de amigos à lista.
-   - A aplicação valida se o nome já foi adicionado e evita duplicidades.
+1. **Adicionar Nomes:**
+   - O usuário pode adicionar uma lista de nomes separados por vírgula.
+   - A aplicação valida se os nomes estão no formato correto e evita duplicidades.
 
-2. **Sortear Pares:**
-   - O sorteio é realizado de forma aleatória, garantindo que cada amigo seja sorteado apenas uma vez.
-   - O resultado do sorteio é exibido na tela, mostrando quem tirou quem.
+2. **Sortear Nomes:**
+   - O sorteio é realizado de forma aleatória, garantindo que os nomes sejam exibidos em ordem aleatória.
+   - O resultado do sorteio é exibido na tela, mostrando a ordem dos nomes sorteados.
 
 3. **Reiniciar Sorteio:**
-   - O usuário pode reiniciar o sorteio, limpando a lista de amigos e os resultados anteriores.
+   - O usuário pode reiniciar o sorteio, limpando a lista de nomes e os resultados anteriores.
 
 4. **Design Responsivo:**
    - A interface é responsiva, ajustando-se automaticamente para diferentes tamanhos de tela, proporcionando uma boa experiência em dispositivos móveis.
@@ -27,7 +27,7 @@ Este projeto é uma aplicação de sorteio de **Amigo Secreto**, desenvolvida em
 ### Arquivos e Suas Responsabilidades
 
 - **`index.html`**
-    - Estrutura da aplicação, incluindo os campos de entrada, botões e as áreas para exibição da lista de amigos e do resultado do sorteio.
+    - Estrutura da aplicação, incluindo os campos de entrada, botões e as áreas para exibição da lista de nomes e do resultado do sorteio.
 
 - **`style.css`**
     - Estilização geral da aplicação, incluindo cores, fontes e layout.
@@ -35,9 +35,9 @@ Este projeto é uma aplicação de sorteio de **Amigo Secreto**, desenvolvida em
 
 - **`app.js`**
     - Lógica principal da aplicação, incluindo:
-        - Adição de amigos à lista.
-        - Validação de nomes duplicados.
-        - Sorteio aleatório dos pares.
+        - Adição de nomes à lista.
+        - Validação do formato dos nomes.
+        - Sorteio aleatório dos nomes.
         - Exibição dos resultados.
         - Funcionalidade de reinício da aplicação.
 
@@ -50,10 +50,10 @@ Este projeto é uma aplicação de sorteio de **Amigo Secreto**, desenvolvida em
 2. **Abra o arquivo `index.html` no navegador.**
    
 3. **Use a aplicação:**
-   - Digite o nome de um amigo no campo de entrada e clique em "Adicionar" para incluí-lo na lista.
-   - Clique em "Sortear" para realizar o sorteio dos pares.
+   - Digite os nomes separados por vírgula no campo de entrada e clique em "Adicionar" para incluí-los na lista.
+   - Clique em "Sortear" para realizar o sorteio dos nomes.
    - O resultado será exibido na seção "Sorteio".
-   - Clique em "Reiniciar" para limpar a lista de amigos e os resultados do sorteio.
+   - Clique em "Reiniciar" para limpar a lista de nomes e os resultados do sorteio.
 
 ---
 
@@ -69,4 +69,4 @@ Este projeto é uma aplicação de sorteio de **Amigo Secreto**, desenvolvida em
 Lucas Degrande
 
 ## Página
-[Link para o projeto](https://degrandelucas.github.io/AmigoSecreto-Sorteio/)
+[Link para o projeto](https://degrandelucas.github.io/SorteadorNomesEmLote/)
