@@ -1,23 +1,34 @@
     let listaNomes = [];
+    let listaNomesRepetidos = [];
 
     function adicionar() {
-      let nome = document.getElementById("nome").value.trim().toUpperCase();
+      let nomesInput = document.getElementById("nomes").value;
 
-      if (nome === "") {
-        alert("Digite um nome!");
+      if (!nomesInput.includes(",") && nomesInput !== "") {
+        alert("Separe os nomes usando vírgulas!");
         return;
       }
 
-      if (listaNomes.includes(nome)) {
-        alert("Nome já está na lista!");
-        document.getElementById("nome").value = "";
+      if (nomesInput === "") {
+        alert("Nehum nome foi adicionado!");
         return;
       }
 
-      listaNomes.push(nome);
+      let nomesSeparados = nomesInput.split(",").map(nome => nome.trim().toUpperCase()).filter(nome => nome !== "");
 
+      nomesSeparados.forEach((nome) => {
+        if (nome !== "") {
+          if (listaNomes.includes(nome)) {
+            listaNomesRepetidos.push(nome);
+          } else {
+            listaNomes.push(nome);
+          }
+        }
+      });
+      
       document.getElementById("lista-nomes").innerHTML = listaNomes;
-      document.getElementById("nome").value = "";
+      document.getElementById("nomes").value = "";
+   
     }
 
     function sortear() {
@@ -30,6 +41,7 @@
       } else {
         embaralha(listaNomes);
       }
+
       for (let i = 0; i < listaNomes.length; i++) {
         if (i < listaNomes.length) {
           sorteio.innerHTML += `${i+1} - ${listaNomes[i]} <br>`;
@@ -52,4 +64,5 @@
       document.getElementById("lista-nomes").innerHTML = "";
       document.getElementById("lista-sorteio").innerHTML = "";
       listaNomes = [];
+      listaNomesRepetidos = [];
     }
