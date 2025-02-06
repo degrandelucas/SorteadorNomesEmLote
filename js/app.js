@@ -25,6 +25,8 @@
           }
         }
       });
+
+      alert(`Os nomes ${listaNomesRepetidos.join(",")} estavam repetidos e foram removidos!`);
       
       document.getElementById("lista-nomes").innerHTML = listaNomes;
       document.getElementById("nomes").value = "";
